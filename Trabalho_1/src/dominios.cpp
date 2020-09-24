@@ -21,6 +21,14 @@ void Cep::setCep(int cep){
 }
 
 // Classe
+void Classe::validar(string Classe){
+    if (classe != "CDB" && classe != "LCA" && classe != "LCI" && classe != "LF"  && classe != "LC")
+        throw invalid_argument("Argumento invalido.");
+}
+void Classe::setClasse(string classe){
+    validar(classe);
+    this->classe = classe;
+}
 
 // CodigoAgencia
 void CodigoAgencia::validar(int codigoAgencia){
@@ -43,6 +51,14 @@ void CodigoAplicacao::setCodigoAplicacao(int codigoAplicacao){
 }
 
 // CodigoBanco
+void CodigoBanco::validar(int codigoBanco){
+    if (codigoBanco == LIMITE)
+        throw invalid_argument("Argumento invalido.");
+}
+void CodigoBanco::setCodigoBanco(int codigoBanco){
+    validar(codigoBanco);
+    this->codigoBanco = codigoBanco;
+}
 
 // CodigoProduto
 void CodigoProduto::validar(int codigoProduto){
@@ -74,7 +90,7 @@ void CodigoProduto::setCodigoProduto(int codigoProduto){
 
 // Taxa
 void Taxa::validar(int taxa){
-    if (taxa > LIMITE)
+    if (taxa < LIMITEMIN || taxa > LIMITEMAX)
         throw invalid_argument("Argumento invalido.");
 }
 void Taxa::setTaxa(int taxa){
@@ -84,7 +100,7 @@ void Taxa::setTaxa(int taxa){
 
 // ValorAplicacao
 void ValorAplicacao::validar(int valorAplicacao){
-    if (valorAplicacao > LIMITE)
+    if (valorAplicacao < LIMITEMIN || valorAplicacao > LIMITEMAX)
         throw invalid_argument("Argumento invalido.");
 }
 void ValorAplicacao::setValorAplicacao(int valorAplicacao){

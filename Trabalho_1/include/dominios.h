@@ -32,6 +32,16 @@ class Cep{
 };
 
 class Classe{
+    private:
+        string classe;
+        const string LIMITE[5] = {"CDB","LCA","LCI","LF","LC"};
+        void validar(string);
+
+    public:
+        void setClasse(string);
+        string getClasse() const {
+            return classe;
+        }
 };
 
 class CodigoAgencia{
@@ -61,6 +71,16 @@ class CodigoAplicacao{
 };
 
 class CodigoBanco{
+    private:
+        int codigoBanco;
+        const static int LIMITE = 0;
+        void validar(int);
+
+    public:
+        void setCodigoBanco(int);
+        int getCodigoBanco() const {
+            return codigoBanco;
+        }
 };
 
 class CodigoProduto{
@@ -106,7 +126,8 @@ class Senha{
 class Taxa{
     private:
         int taxa;
-        const static int LIMITE = 200;
+        const static int LIMITEMIN = 0;
+        const static int LIMITEMAX = 200;
         void validar(int);
 
     public:
@@ -119,7 +140,8 @@ class Taxa{
 class ValorAplicacao{
     private:
         int valorAplicacao;
-        const static int LIMITE =  100000000 ;
+        const static int LIMITEMAX =  100000000 ;
+        const static int LIMITEMIN =  0 ;
         void validar(int);
 
     public:

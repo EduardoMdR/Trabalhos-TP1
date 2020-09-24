@@ -25,6 +25,14 @@ int main()
     }
 
     // Classe
+    TUClasse testeClasse;
+    switch(testeClasse.run()){
+        case TUClasse::SUCESSO: cout << "SUCESSO Classe\n";
+            break;
+        case TUClasse::FALHA  : cout << "FALHA para classe Classe \n";
+            break;
+    }
+
 
     // Codigo Agencia
     TUCodigoAgencia testeCodigoAgencia;
@@ -45,6 +53,13 @@ int main()
     }
 
     // Codigo banco
+    TUCodigoBanco testeCodigoBanco;
+    switch(testeCodigoBanco.run()){
+        case TUCodigoBanco::SUCESSO: cout << "SUCESSO Codigo Banco \n";
+            break;
+        case TUCodigoBanco::FALHA  : cout << "FALHA para classe CodigoBanco \n";
+            break;
+    }
 
     // Codigo Produto
     TUCodigoProduto testeCodigoProduto;

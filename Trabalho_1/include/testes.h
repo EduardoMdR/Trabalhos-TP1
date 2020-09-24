@@ -45,6 +45,21 @@ class TUCep{
 
 
 class TUClasse{
+    private:
+        const string VALOR_VALIDO   = "CDB";
+        const string VALOR_INVALIDO = "AAA";
+        Classe *classe;
+        int estado;
+
+        void setUp();
+        void tearDown();
+        void testarCenarioSucesso();
+        void testarCenarioFalha();
+
+    public:
+        const static int SUCESSO =  0;
+        const static int FALHA   = -1;
+        int run();
 };
 
 
@@ -87,7 +102,23 @@ class TUCodigoAplicacao{
 
 
 class TUCodigoBanco{
+    private:
+        const static int VALOR_VALIDO   = 12345;
+        const static int VALOR_INVALIDO = 00000;
+        CodigoBanco *codigoBanco;
+        int estado;
+
+        void setUp();
+        void tearDown();
+        void testarCenarioSucesso();
+        void testarCenarioFalha();
+
+    public:
+        const static int SUCESSO =  0;
+        const static int FALHA   = -1;
+        int run();
 };
+
 
 
 class TUCodigoProduto{

@@ -1,18 +1,20 @@
 # depslib dependency file v1.0
-1600789521 source:c:\users\eduar\documents\github\trabalhos-tp1\trabalho_1\src\dominios.cpp
+1600964535 source:c:\users\eduar\documents\github\trabalhos-tp1\trabalho_1\src\dominios.cpp
 	"dominios.h"
 
-1600789374 c:\users\eduar\documents\github\trabalhos-tp1\trabalho_1\include\dominios.h
+1600964474 c:\users\eduar\documents\github\trabalhos-tp1\trabalho_1\include\dominios.h
 	<stdexcept>
 
-1600789056 source:c:\users\eduar\documents\github\trabalhos-tp1\trabalho_1\src\testes.cpp
+1600962554 source:c:\users\eduar\documents\github\trabalhos-tp1\trabalho_1\src\testes.cpp
 	"testes.h"
 
-1600789958 c:\users\eduar\documents\github\trabalhos-tp1\trabalho_1\include\testes.h
+1600964571 c:\users\eduar\documents\github\trabalhos-tp1\trabalho_1\include\testes.h
 	"dominios.h"
 
-1600787964 source:c:\users\eduar\documents\github\trabalhos-tp1\trabalho_1\main.cpp
+1600964432 source:c:\users\eduar\documents\github\trabalhos-tp1\trabalho_1\main.cpp
 	<iostream>
 	"dominios.h"
 	"testes.h"
+
+1600905783 source:c:\users\eduar\documents\github\trabalhos-tp1\trabalho_1\seila.c
 
