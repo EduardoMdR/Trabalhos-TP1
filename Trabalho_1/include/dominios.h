@@ -97,30 +97,120 @@ class CodigoProduto{
 };
 
 class Cpf{
+    private:
+        int cpf;
+        const static int LIMITE = 0;
+        void validar(int);
+
+    public:
+        void setCpf(int);
+        int getCpf() const {
+            return cpf;
+        }
 };
 
 class Data{
+    private:
+        int data;
+        const static int LIMITE = 0;
+        void validar(int);
+
+    public:
+        void setData(int);
+        int getData() const {
+            return data;
+        }
 };
 
 class Emissor{
+    private:
+        string emissor;
+        const string LIMITE = "aaa";
+        void validar(string);
+
+    public:
+        void setEmissor(string);
+        string getEmissor() const {
+            return emissor;
+        }
 };
 
 class Endereco{
+    private:
+        string endereco;
+        const string LIMITE = "aaa";
+        void validar(string);
+
+    public:
+        void setEndereco(string);
+        string getEndereco() const {
+            return endereco;
+        }
 };
 
 class Horario{
+    private:
+        int horario;
+        const static int LIMITE = 0;
+        void validar(int);
+
+    public:
+        void setHorario(int);
+        int getHorario() const {
+            return horario;
+        }
 };
 
 class Nome{
+    private:
+        string nome;
+        const string LIMITE = "aaa";
+        void validar(string);
+
+    public:
+        void setNome(string);
+        string getNome() const {
+            return nome;
+        }
 };
 
 class Numero{
+    private:
+        int numero;
+        const static int LIMITE = 0;
+        void validar(int);
+
+    public:
+        void setNumero(int);
+        int getNumero() const {
+            return numero;
+        }
 };
 
 class Prazo{
+    private:
+        int prazo;
+        const static int LIMITE = 0;
+        void validar(int);
+
+    public:
+        void setPrazo(int);
+        int getPrazo() const {
+            return prazo;
+        }
 };
 
 class Senha{
+    private:
+        int senha;
+        const static int LIMITE = 0;
+        void validar(int);
+
+    public:
+        void setSenha(int);
+        int getSenha() const {
+            return senha;
+        }
 };
 
 class Taxa{

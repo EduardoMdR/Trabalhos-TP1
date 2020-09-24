@@ -261,22 +261,337 @@ int TUCodigoProduto::run(){
 }
 
 // Cpf
+void TUCpf::setUp(){
+    cpf = new Cpf();
+    estado = SUCESSO;
+}
+void TUCpf::tearDown(){
+    delete cpf;
+}
+void TUCpf::testarCenarioSucesso(){
+    try{
+        cpf->setCpf(VALOR_VALIDO);
+        if (cpf->getCpf() != VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        estado = FALHA;
+    }
+}
+void TUCpf::testarCenarioFalha(){
+    try{
+        cpf->setCpf(VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        if (cpf->getCpf() == VALOR_INVALIDO)
+            estado = FALHA;
+        return;
+    }
+}
+int TUCpf::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}
 
 // Data
+void TUData::setUp(){
+    data = new Data();
+    estado = SUCESSO;
+}
+void TUData::tearDown(){
+    delete data;
+}
+void TUData::testarCenarioSucesso(){
+    try{
+        data->setData(VALOR_VALIDO);
+        if (data->getData() != VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        estado = FALHA;
+    }
+}
+void TUData::testarCenarioFalha(){
+    try{
+        data->setData(VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        if (data->getData() == VALOR_INVALIDO)
+            estado = FALHA;
+        return;
+    }
+}
+int TUData::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}
 
 // Emissor
+void TUEmissor::setUp(){
+    emissor = new Emissor();
+    estado = SUCESSO;
+}
+void TUEmissor::tearDown(){
+    delete emissor;
+}
+void TUEmissor::testarCenarioSucesso(){
+    try{
+        emissor->setEmissor(VALOR_VALIDO);
+        if (emissor->getEmissor() != VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        estado = FALHA;
+    }
+}
+void TUEmissor::testarCenarioFalha(){
+    try{
+        emissor->setEmissor(VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        if (emissor->getEmissor() == VALOR_INVALIDO)
+            estado = FALHA;
+        return;
+    }
+}
+int TUEmissor::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}
 
 // Endereco
+void TUEndereco::setUp(){
+    endereco = new Endereco();
+    estado = SUCESSO;
+}
+void TUEndereco::tearDown(){
+    delete endereco;
+}
+void TUEndereco::testarCenarioSucesso(){
+    try{
+        endereco->setEndereco(VALOR_VALIDO);
+        if (endereco->getEndereco() != VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        estado = FALHA;
+    }
+}
+void TUEndereco::testarCenarioFalha(){
+    try{
+        endereco->setEndereco(VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        if (endereco->getEndereco() == VALOR_INVALIDO)
+            estado = FALHA;
+        return;
+    }
+}
+int TUEndereco::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}
 
 // Horario
+void TUHorario::setUp(){
+    horario = new Horario();
+    estado = SUCESSO;
+}
+void TUHorario::tearDown(){
+    delete horario;
+}
+void TUHorario::testarCenarioSucesso(){
+    try{
+        horario->setHorario(VALOR_VALIDO);
+        if (horario->getHorario() != VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        estado = FALHA;
+    }
+}
+void TUHorario::testarCenarioFalha(){
+    try{
+        horario->setHorario(VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        if (horario->getHorario() == VALOR_INVALIDO)
+            estado = FALHA;
+        return;
+    }
+}
+int TUHorario::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}
 
 // Nome
+void TUNome::setUp(){
+    nome = new Nome();
+    estado = SUCESSO;
+}
+void TUNome::tearDown(){
+    delete nome;
+}
+void TUNome::testarCenarioSucesso(){
+    try{
+        nome->setNome(VALOR_VALIDO);
+        if (nome->getNome() != VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        estado = FALHA;
+    }
+}
+void TUNome::testarCenarioFalha(){
+    try{
+        nome->setNome(VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        if (nome->getNome() == VALOR_INVALIDO)
+            estado = FALHA;
+        return;
+    }
+}
+int TUNome::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}
 
 // Numero
+void TUNumero::setUp(){
+    numero = new Numero();
+    estado = SUCESSO;
+}
+void TUNumero::tearDown(){
+    delete numero;
+}
+void TUNumero::testarCenarioSucesso(){
+    try{
+        numero->setNumero(VALOR_VALIDO);
+        if (numero->getNumero() != VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        estado = FALHA;
+    }
+}
+void TUNumero::testarCenarioFalha(){
+    try{
+        numero->setNumero(VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        if (numero->getNumero() == VALOR_INVALIDO)
+            estado = FALHA;
+        return;
+    }
+}
+int TUNumero::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}
 
 // Prazo
+void TUPrazo::setUp(){
+    prazo = new Prazo();
+    estado = SUCESSO;
+}
+void TUPrazo::tearDown(){
+    delete prazo;
+}
+void TUPrazo::testarCenarioSucesso(){
+    try{
+        prazo->setPrazo(VALOR_VALIDO);
+        if (prazo->getPrazo() != VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        estado = FALHA;
+    }
+}
+void TUPrazo::testarCenarioFalha(){
+    try{
+        prazo->setPrazo(VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        if (prazo->getPrazo() == VALOR_INVALIDO)
+            estado = FALHA;
+        return;
+    }
+}
+int TUPrazo::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}
 
 // Senha
+void TUSenha::setUp(){
+    senha = new Senha();
+    estado = SUCESSO;
+}
+void TUSenha::tearDown(){
+    delete senha;
+}
+void TUSenha::testarCenarioSucesso(){
+    try{
+        senha->setSenha(VALOR_VALIDO);
+        if (senha->getSenha() != VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        estado = FALHA;
+    }
+}
+void TUSenha::testarCenarioFalha(){
+    try{
+        senha->setSenha(VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        if (senha->getSenha() == VALOR_INVALIDO)
+            estado = FALHA;
+        return;
+    }
+}
+int TUSenha::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}
 
 // Taxa
 void TUTaxa::setUp(){

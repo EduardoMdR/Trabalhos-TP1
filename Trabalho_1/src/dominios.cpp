@@ -71,22 +71,94 @@ void CodigoProduto::setCodigoProduto(int codigoProduto){
 }
 
 // Cpf
+void Cpf::validar(int cpf){
+    if (cpf == LIMITE)
+        throw invalid_argument("Argumento invalido.");
+}
+void Cpf::setCpf(int cpf){
+    validar(cpf);
+    this->cpf = cpf;
+}
 
 // Data
+void Data::validar(int data){
+    if (data == LIMITE)
+        throw invalid_argument("Argumento invalido.");
+}
+void Data::setData(int data){
+    validar(data);
+    this->data = data;
+}
 
 // Emissor
+void Emissor::validar(string emissor){
+    if (emissor == LIMITE)
+        throw invalid_argument("Argumento invalido.");
+}
+void Emissor::setEmissor(string emissor){
+    validar(emissor);
+    this->emissor = emissor;
+}
 
 // Endereco
+void Endereco::validar(string endereco){
+    if (endereco == LIMITE)
+        throw invalid_argument("Argumento invalido.");
+}
+void Endereco::setEndereco(string endereco){
+    validar(endereco);
+    this->endereco = endereco;
+}
 
 // Horario
+void Horario::validar(int horario){
+    if (horario == LIMITE)
+        throw invalid_argument("Argumento invalido.");
+}
+void Horario::setHorario(int horario){
+    validar(horario);
+    this->horario = horario;
+}
 
 // Nome
+void Nome::validar(string nome){
+    if (nome == LIMITE)
+        throw invalid_argument("Argumento invalido.");
+}
+void Nome::setNome(string nome){
+    validar(nome);
+    this->nome = nome;
+}
 
 // Numero
+void Numero::validar(int numero){
+    if (numero == LIMITE)
+        throw invalid_argument("Argumento invalido.");
+}
+void Numero::setNumero(int numero){
+    validar(numero);
+    this->numero = numero;
+}
 
 // Prazo
+void Prazo::validar(int prazo){
+    if (prazo == LIMITE)
+        throw invalid_argument("Argumento invalido.");
+}
+void Prazo::setPrazo(int prazo){
+    validar(prazo);
+    this->prazo = prazo;
+}
 
 // Senha
+void Senha::validar(int senha){
+    if (senha == LIMITE)
+        throw invalid_argument("Argumento invalido.");
+}
+void Senha::setSenha(int senha){
+    validar(senha);
+    this->senha = senha;
+}
 
 // Taxa
 void Taxa::validar(int taxa){

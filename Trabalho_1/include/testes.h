@@ -120,7 +120,6 @@ class TUCodigoBanco{
 };
 
 
-
 class TUCodigoProduto{
     private:
         const static int VALOR_VALIDO   = 123;
@@ -141,38 +140,173 @@ class TUCodigoProduto{
 
 
 class TUCpf{
+    private:
+        const static int VALOR_VALIDO   = 12345;
+        const static int VALOR_INVALIDO = 00000;
+        Cpf *cpf;
+        int estado;
+
+        void setUp();
+        void tearDown();
+        void testarCenarioSucesso();
+        void testarCenarioFalha();
+
+    public:
+        const static int SUCESSO =  0;
+        const static int FALHA   = -1;
+        int run();
 };
 
 
 class TUData{
+    private:
+        const static int VALOR_VALIDO   = 12345;
+        const static int VALOR_INVALIDO = 00000;
+        Data *data;
+        int estado;
+
+        void setUp();
+        void tearDown();
+        void testarCenarioSucesso();
+        void testarCenarioFalha();
+
+    public:
+        const static int SUCESSO =  0;
+        const static int FALHA   = -1;
+        int run();
 };
 
 
 class TUEmissor{
+    private:
+        const string VALOR_VALIDO   = "AAA";
+        const string VALOR_INVALIDO = "aaa";
+        Emissor *emissor;
+        int estado;
+
+        void setUp();
+        void tearDown();
+        void testarCenarioSucesso();
+        void testarCenarioFalha();
+
+    public:
+        const static int SUCESSO =  0;
+        const static int FALHA   = -1;
+        int run();
 };
 
 
 class TUEndereco{
+    private:
+        const string VALOR_VALIDO   = "AAA";
+        const string VALOR_INVALIDO = "aaa";
+        Endereco *endereco;
+        int estado;
+
+        void setUp();
+        void tearDown();
+        void testarCenarioSucesso();
+        void testarCenarioFalha();
+
+    public:
+        const static int SUCESSO =  0;
+        const static int FALHA   = -1;
+        int run();
 };
 
 
 class TUHorario{
+    private:
+        const static int VALOR_VALIDO   = 12345;
+        const static int VALOR_INVALIDO = 00000;
+        Horario *horario;
+        int estado;
+
+        void setUp();
+        void tearDown();
+        void testarCenarioSucesso();
+        void testarCenarioFalha();
+
+    public:
+        const static int SUCESSO =  0;
+        const static int FALHA   = -1;
+        int run();
 };
 
 
 class TUNome{
+    private:
+        const string VALOR_VALIDO   = "AAA";
+        const string VALOR_INVALIDO = "aaa";
+        Nome *nome;
+        int estado;
+
+        void setUp();
+        void tearDown();
+        void testarCenarioSucesso();
+        void testarCenarioFalha();
+
+    public:
+        const static int SUCESSO =  0;
+        const static int FALHA   = -1;
+        int run();
 };
 
 
 class TUNumero{
+    private:
+        const static int VALOR_VALIDO   = 12345;
+        const static int VALOR_INVALIDO = 00000;
+        Numero *numero;
+        int estado;
+
+        void setUp();
+        void tearDown();
+        void testarCenarioSucesso();
+        void testarCenarioFalha();
+
+    public:
+        const static int SUCESSO =  0;
+        const static int FALHA   = -1;
+        int run();
 };
 
 
 class TUPrazo{
+    private:
+        const static int VALOR_VALIDO   = 12345;
+        const static int VALOR_INVALIDO = 00000;
+        Prazo *prazo;
+        int estado;
+
+        void setUp();
+        void tearDown();
+        void testarCenarioSucesso();
+        void testarCenarioFalha();
+
+    public:
+        const static int SUCESSO =  0;
+        const static int FALHA   = -1;
+        int run();
 };
 
 
 class TUSenha{
+    private:
+        const static int VALOR_VALIDO   = 12345;
+        const static int VALOR_INVALIDO = 00000;
+        Senha *senha;
+        int estado;
+
+        void setUp();
+        void tearDown();
+        void testarCenarioSucesso();
+        void testarCenarioFalha();
+
+    public:
+        const static int SUCESSO =  0;
+        const static int FALHA   = -1;
+        int run();
 };
 
 

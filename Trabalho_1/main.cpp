@@ -33,7 +33,6 @@ int main()
             break;
     }
 
-
     // Codigo Agencia
     TUCodigoAgencia testeCodigoAgencia;
     switch(testeCodigoAgencia.run()){
@@ -71,22 +70,85 @@ int main()
     }
 
     // Cpf
+    TUCpf testeCpf;
+    switch(testeCpf.run()){
+        case TUCpf::SUCESSO: cout << "SUCESSO Cpf \n";
+            break;
+        case TUCpf::FALHA  : cout << "FALHA para classe Cpf \n";
+            break;
+    }
 
     // Data
+    TUData testeData;
+    switch(testeData.run()){
+        case TUData::SUCESSO: cout << "SUCESSO Data \n";
+            break;
+        case TUData::FALHA  : cout << "FALHA para classe Data \n";
+            break;
+    }
 
     // Emissor
+    TUEmissor testeEmissor;
+    switch(testeEmissor.run()){
+        case TUEmissor::SUCESSO: cout << "SUCESSO Emissor \n";
+            break;
+        case TUEmissor::FALHA  : cout << "FALHA para classe Emissor \n";
+            break;
+    }
 
     // Endereco
+    TUEndereco testeEndereco;
+    switch(testeEndereco.run()){
+        case TUEndereco::SUCESSO: cout << "SUCESSO Endereco \n";
+            break;
+        case TUEndereco::FALHA  : cout << "FALHA para classe Endereco \n";
+            break;
+    }
 
     // Horario
+    TUHorario testeHorario;
+    switch(testeHorario.run()){
+        case TUHorario::SUCESSO: cout << "SUCESSO Horario \n";
+            break;
+        case TUHorario::FALHA  : cout << "FALHA para classe Horario \n";
+            break;
+    }
 
     // Nome
+    TUNome testeNome;
+    switch(testeNome.run()){
+        case TUNome::SUCESSO: cout << "SUCESSO Nome \n";
+            break;
+        case TUNome::FALHA  : cout << "FALHA para classe Nome \n";
+            break;
+    }
 
     // Numero
+    TUNumero testeNumero;
+    switch(testeNumero.run()){
+        case TUNumero::SUCESSO: cout << "SUCESSO Numero \n";
+            break;
+        case TUNumero::FALHA  : cout << "FALHA para classe Numero \n";
+            break;
+    }
 
     // Prazo
+    TUPrazo testePrazo;
+    switch(testePrazo.run()){
+        case TUPrazo::SUCESSO: cout << "SUCESSO Prazo \n";
+            break;
+        case TUPrazo::FALHA  : cout << "FALHA para classe Prazo \n";
+            break;
+    }
 
     // Senha
+    TUSenha testeSenha;
+    switch(testeSenha.run()){
+        case TUSenha::SUCESSO: cout << "SUCESSO Senha \n";
+            break;
+        case TUSenha::FALHA  : cout << "FALHA para classe Senha \n";
+            break;
+    }
 
     // Taxa
     TUTaxa testeTaxa;
