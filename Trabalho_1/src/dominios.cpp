@@ -1,14 +1,5 @@
 #include "dominios.h"
 
-// Exemplo
-void Codigo::validar(int codigo){
-    if (codigo > LIMITE)
-        throw invalid_argument("Argumento invalido.");
-}
-void Codigo::setCodigo(int codigo){
-    validar(codigo);
-    this->codigo = codigo;
-}
 
 // Cep
 void Cep::validar(int cep){

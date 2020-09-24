@@ -7,14 +7,6 @@ using namespace std;
 
 int main()
 {
-    TUCodigo teste;
-    switch(teste.run()){
-        case TUCodigo::SUCESSO: cout << "SUCESSO \n";
-            break;
-        case TUCodigo::FALHA  : cout << "FALHA para classe Codigo\n";
-            break;
-    }
-
     // Inicio Cep
     TUCep testeCep;
     switch(testeCep.run()){
