@@ -17,7 +17,8 @@ using namespace std;
 class Cep{
     private:
         int cep;
-        const static int LIMITE = 1000000;
+        const static int LIMITEMAXIMO = 60999999;
+        const static int LIMITEMINIMO = 1000000;
 
 ///
 /// V&aacute;lida o objeto caso esteja dentro do valor LIMITE .
@@ -58,7 +59,7 @@ class Cep{
 class Classe{
     private:
         string classe;
-        const string LIMITE[5] = {"CDB","LCA","LCI","LF","LC"};
+        string LIMITE[5] = {"CDB","LCA","LCI","LF","LC"};
 
 ///
 /// V&aacute;lida o objeto caso esteja dentro do valores estabelecidos .
@@ -181,7 +182,7 @@ class CodigoAplicacao{
 class CodigoBanco{
     private:
         int codigoBanco;
-        const static int LIMITE = 0;
+        const int LIMITE[5] =  {001, 033, 104, 237, 341};
 
 ///
 /// V&aacute;lida o objeto caso esteja dentro do valores estabelecidos .
@@ -262,13 +263,13 @@ class CodigoProduto{
 
 class Cpf{
     private:
-        int cpf;
-        const static int LIMITE = 0;
+        string cpf;
+        const static int LIMITE = 44;   // cpf com valor da soma dos numeros igual 44 é o mais comum.
 
 ///
 /// V&aacute;lida o objeto caso respeite a soma dos numeros .
 ///
-        void validar(int);
+        void validar(string);
 
     public:
 
@@ -282,12 +283,12 @@ class Cpf{
 /// - Armazena caso seja um valor v&aacute;lido .
 /// - n&atilde;o armazena caso seja um valor inv&aacute;lido .
 ///
-        void setCpf(int);
+        void setCpf(string);
 
 ///
 /// Retorna o valor armazenado no atributo de inst&acirc;ncia .
 ///
-        int getCpf() const {
+        string getCpf() const {
             return cpf;
         }
 };
@@ -304,7 +305,8 @@ class Cpf{
 class Data{
     private:
         int data;
-        const static int LIMITE = 0;
+        const static int LIMITEMAXIMO = 31122099;
+        const static int LIMITEMINIMO = 01012020;
 
 ///
 /// V&aacute;lida o objeto caso a data esteja certa .
@@ -345,7 +347,6 @@ class Data{
 class Emissor{
     private:
         string emissor;
-        const string LIMITE = "aaa";
 
 ///
 /// V&aacute;lida o objeto caso obede&ccedil;a o formato estabelecido .
@@ -386,7 +387,6 @@ class Emissor{
 class Endereco{
     private:
         string endereco;
-        const string LIMITE = "aaa";
 
 ///
 /// V&aacute;lida o objeto caso obede&ccedil;a o formato estabelecido .
@@ -427,7 +427,8 @@ class Endereco{
 class Horario{
     private:
         int horario;
-        const static int LIMITE = 0;
+        const static int LIMITEMAXIMO = 1700;
+        const static int LIMITEMINIMO = 1300;
 
 ///
 /// V&aacute;lida o objeto caso obede&ccedil;a o hor&aacute;rio estabelecido .
@@ -468,7 +469,6 @@ class Horario{
 class Nome{
     private:
         string nome;
-        const string LIMITE = "aaa";
 
 ///
 /// V&aacute;lida o objeto caso obede&ccedil;a o formato estabelecido .
@@ -503,18 +503,19 @@ class Nome{
 ///
 /// Regras de formato :
 ///
-/// - C&oacute;digo &eacute; v&aacute;lido caso ( XXXXXX-Y ), sendo X um n&uacute;mero de (0/9) e Y calculado atrav&eacute;z de um algoritomo .
+/// - C&oacute;digo &eacute; v&aacute;lido caso ( XXXX-Y ), sendo X um n&uacute;mero de (0/9) e Y calculado atrav&eacute;z de um algoritomo .
 ///
+/// - Para obter o digito verificador, multiplica-se os quatro primeiros digitos da agencia pelos numeros 5,4,3,2, divide por 11, e subtrai de 11 o resto da divisao anterior.
+
 
 class Numero{
     private:
-        int numero;
-        const static int LIMITE = 0;
+        string numero;
 
 ///
 /// V&aacute;lida o objeto caso obede&ccedil;a o formato estabelecido .
 ///
-        void validar(int);
+        void validar(string);
 
     public:
 
@@ -528,12 +529,12 @@ class Numero{
 /// - Armazena caso seja um valor v&aacute;lido .
 /// - n&atilde;o armazena caso seja um valor inv&aacute;lido .
 ///
-        void setNumero(int);
+        void setNumero(string);
 
 ///
 /// Retorna o valor armazenado no atributo de inst&acirc;ncia .
 ///
-        int getNumero() const {
+        string getNumero() const {
             return numero;
         }
 };
@@ -550,7 +551,7 @@ class Numero{
 class Prazo{
     private:
         int prazo;
-        const static int LIMITE = 0;
+        const int LIMITE[12] = {6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 66, 72};
 
 ///
 /// V&aacute;lida o objeto caso esteja dentro do valores estabelecidos .
@@ -590,13 +591,12 @@ class Prazo{
 
 class Senha{
     private:
-        int senha;
-        const static int LIMITE = 0;
+        string senha;
 
 ///
 /// V&aacute;lida o objeto caso nao repita nenhum n&uacute;mero .
 ///
-        void validar(int);
+        void validar(string);
 
     public:
 
@@ -610,12 +610,12 @@ class Senha{
 /// - Armazena caso seja um valor v&aacute;lido .
 /// - n&atilde;o armazena caso seja um valor inv&aacute;lido .
 ///
-        void setSenha(int);
+        void setSenha(string);
 
 ///
 /// Retorna o valor armazenado no atributo de inst&acirc;ncia .
 ///
-        int getSenha() const {
+        string getSenha() const {
             return senha;
         }
 };
@@ -632,8 +632,8 @@ class Senha{
 class Taxa{
     private:
         int taxa;
-        const static int LIMITEMIN = 0;
-        const static int LIMITEMAX = 200;
+        const static int LIMITEMAXIMO = 200;
+        const static int LIMITEMINIMO =   0;
 
 ///
 /// V&aacute;lida o objeto caso esteja dentro do valores estabelecidos .
@@ -674,8 +674,8 @@ class Taxa{
 class ValorAplicacao{
     private:
         int valorAplicacao;
-        const static int LIMITEMAX =  100000000 ;
-        const static int LIMITEMIN =  0 ;
+        const static int LIMITEMAXIMO = 1000000;
+        const static int LIMITEMINIMO =       0;
 
 ///
 /// V&aacute;lida o objeto caso esteja dentro do valores estabelecidos .
@@ -716,7 +716,7 @@ class ValorAplicacao{
 class ValorMinimo{
     private:
         int valorMinimo;
-        const static int LIMITE =  100000 ;
+        const int LIMITE[4] =  {1000, 5000, 10000, 5000};   // 1000 = R$ 1.000,00
 
 ///
 /// V&aacute;lida o objeto caso esteja dentro do valores estabelecidos .
@@ -744,6 +744,5 @@ class ValorMinimo{
             return valorMinimo;
         }
 };
-
 
 #endif // DOMINIOS_H_INCLUDED rMinimo

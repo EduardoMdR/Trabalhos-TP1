@@ -8,8 +8,8 @@ using namespace std;
 
 class TUCep{
     private:
-        const static int VALOR_VALIDO   = 3779500;
-        const static int VALOR_INVALIDO =  900000;
+        const static int VALOR_VALIDO   = 37795000;
+        const static int VALOR_INVALIDO =   900000;
         Cep *cep;
         int estado;
 
@@ -84,8 +84,8 @@ class TUCodigoAplicacao{
 
 class TUCodigoBanco{
     private:
-        const static int VALOR_VALIDO   = 12345;
-        const static int VALOR_INVALIDO = 00000;
+        const static int VALOR_VALIDO   = 341;
+        const static int VALOR_INVALIDO = 000;
         CodigoBanco *codigoBanco;
         int estado;
 
@@ -122,8 +122,8 @@ class TUCodigoProduto{
 
 class TUCpf{
     private:
-        const static int VALOR_VALIDO   = 12345;
-        const static int VALOR_INVALIDO = 00000;
+        const string VALOR_VALIDO   = "14655871601";
+        const string VALOR_INVALIDO = "11111111111";
         Cpf *cpf;
         int estado;
 
@@ -141,8 +141,8 @@ class TUCpf{
 
 class TUData{
     private:
-        const static int VALOR_VALIDO   = 12345;
-        const static int VALOR_INVALIDO = 00000;
+        const static int VALOR_VALIDO   = 20102020;
+        const static int VALOR_INVALIDO = 0;
         Data *data;
         int estado;
 
@@ -160,8 +160,8 @@ class TUData{
 
 class TUEmissor{
     private:
-        const string VALOR_VALIDO   = "AAA";
-        const string VALOR_INVALIDO = "aaa";
+        const string VALOR_VALIDO   = "Aaaaa";
+        const string VALOR_INVALIDO = "aAa";
         Emissor *emissor;
         int estado;
 
@@ -179,7 +179,7 @@ class TUEmissor{
 
 class TUEndereco{
     private:
-        const string VALOR_VALIDO   = "AAA";
+        const string VALOR_VALIDO   = "AAaaa";
         const string VALOR_INVALIDO = "aaa";
         Endereco *endereco;
         int estado;
@@ -198,8 +198,8 @@ class TUEndereco{
 
 class TUHorario{
     private:
-        const static int VALOR_VALIDO   = 12345;
-        const static int VALOR_INVALIDO = 00000;
+        const static int VALOR_VALIDO   = 1350;
+        const static int VALOR_INVALIDO = 1750;
         Horario *horario;
         int estado;
 
@@ -217,7 +217,7 @@ class TUHorario{
 
 class TUNome{
     private:
-        const string VALOR_VALIDO   = "AAA";
+        const string VALOR_VALIDO   = "Eduardo";
         const string VALOR_INVALIDO = "aaa";
         Nome *nome;
         int estado;
@@ -236,8 +236,8 @@ class TUNome{
 
 class TUNumero{
     private:
-        const static int VALOR_VALIDO   = 12345;
-        const static int VALOR_INVALIDO = 00000;
+        const string VALOR_VALIDO   = "1584-9";
+        const string VALOR_INVALIDO = "1584-0";
         Numero *numero;
         int estado;
 
@@ -255,8 +255,8 @@ class TUNumero{
 
 class TUPrazo{
     private:
-        const static int VALOR_VALIDO   = 12345;
-        const static int VALOR_INVALIDO = 00000;
+        const static int VALOR_VALIDO   = 6;
+        const static int VALOR_INVALIDO = 1;
         Prazo *prazo;
         int estado;
 
@@ -274,8 +274,8 @@ class TUPrazo{
 
 class TUSenha{
     private:
-        const static int VALOR_VALIDO   = 12345;
-        const static int VALOR_INVALIDO = 00000;
+        const string VALOR_VALIDO   = "123456";
+        const string VALOR_INVALIDO = "123455";
         Senha *senha;
         int estado;
 
@@ -312,8 +312,8 @@ class TUTaxa{
 
 class TUValorAplicacao{
     private:
-        const static int VALOR_VALIDO   = 1000000 ;
-        const static int VALOR_INVALIDO = 100000001;
+        const static int VALOR_VALIDO   = 1000000;
+        const static int VALOR_INVALIDO = 1000001;
         ValorAplicacao *valorAplicacao;
         int estado;
 
@@ -331,8 +331,8 @@ class TUValorAplicacao{
 
 class TUValorMinimo{
     private:
-        const static int VALOR_VALIDO   = 100000;
-        const static int VALOR_INVALIDO = 0;
+        const static int VALOR_VALIDO   = 1000;
+        const static int VALOR_INVALIDO =    0;
         ValorMinimo *valorMinimo;
         int estado;
 
