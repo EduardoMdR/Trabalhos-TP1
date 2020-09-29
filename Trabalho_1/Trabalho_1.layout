@@ -121,82 +121,53 @@
 			<Collapse line="662" />
 		</Folding>
 	</File>
-	<File name="include\testes.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+	<File name="src\dominios.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2800" topLine="15" />
-		</Cursor>
-		<Folding>
-			<Collapse line="8" />
-			<Collapse line="27" />
-			<Collapse line="46" />
-			<Collapse line="65" />
-			<Collapse line="84" />
-			<Collapse line="103" />
-			<Collapse line="141" />
-			<Collapse line="160" />
-			<Collapse line="179" />
-			<Collapse line="198" />
-			<Collapse line="217" />
-			<Collapse line="236" />
-			<Collapse line="255" />
-			<Collapse line="274" />
-			<Collapse line="293" />
-			<Collapse line="312" />
-			<Collapse line="331" />
-		</Folding>
-	</File>
-	<File name="include\dominios.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="5568" topLine="101" />
-		</Cursor>
-		<Folding>
-			<Collapse line="16" />
-			<Collapse line="98" />
-			<Collapse line="139" />
-			<Collapse line="180" />
-			<Collapse line="221" />
-			<Collapse line="303" />
-			<Collapse line="346" />
-			<Collapse line="387" />
-			<Collapse line="428" />
-			<Collapse line="469" />
-			<Collapse line="510" />
-			<Collapse line="592" />
-			<Collapse line="633" />
-			<Collapse line="675" />
-			<Collapse line="717" />
-		</Folding>
-	</File>
-	<File name="src\dominios.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1915" topLine="43" />
+			<Cursor1 position="5942" topLine="0" />
 		</Cursor>
 		<Folding>
 			<Collapse line="4" />
 			<Collapse line="8" />
 			<Collapse line="14" />
-			<Collapse line="15" />
+			<Collapse line="22" />
+			<Collapse line="28" />
+			<Collapse line="32" />
+			<Collapse line="38" />
+			<Collapse line="42" />
+			<Collapse line="48" />
+			<Collapse line="58" />
 			<Collapse line="64" />
-			<Collapse line="129" />
-			<Collapse line="133" />
-			<Collapse line="139" />
-			<Collapse line="143" />
-			<Collapse line="159" />
-			<Collapse line="165" />
-			<Collapse line="169" />
-			<Collapse line="175" />
-			<Collapse line="179" />
-			<Collapse line="185" />
-			<Collapse line="189" />
+			<Collapse line="68" />
+			<Collapse line="74" />
+			<Collapse line="84" />
+			<Collapse line="90" />
+			<Collapse line="94" />
+			<Collapse line="100" />
+			<Collapse line="108" />
+			<Collapse line="114" />
+			<Collapse line="121" />
+			<Collapse line="127" />
+			<Collapse line="131" />
+			<Collapse line="137" />
+			<Collapse line="144" />
+			<Collapse line="150" />
+			<Collapse line="166" />
+			<Collapse line="172" />
+			<Collapse line="182" />
+			<Collapse line="188" />
 			<Collapse line="204" />
+			<Collapse line="214" />
+			<Collapse line="220" />
+			<Collapse line="224" />
+			<Collapse line="230" />
+			<Collapse line="237" />
 		</Folding>
 	</File>
-	<File name="main.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+	<File name="main.cpp" open="1" top="1" tabpos="4" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="106" topLine="0" />
+			<Cursor1 position="5023" topLine="57" />
 		</Cursor>
 		<Folding>
-			<Collapse line="11" />
 			<Collapse line="20" />
 			<Collapse line="29" />
 			<Collapse line="38" />
@@ -214,6 +185,56 @@
 			<Collapse line="146" />
 			<Collapse line="155" />
 			<Collapse line="164" />
+		</Folding>
+	</File>
+	<File name="include\testes.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4954" topLine="13" />
+		</Cursor>
+		<Folding>
+			<Collapse line="8" />
+			<Collapse line="27" />
+			<Collapse line="46" />
+			<Collapse line="65" />
+			<Collapse line="84" />
+			<Collapse line="103" />
+			<Collapse line="122" />
+			<Collapse line="141" />
+			<Collapse line="160" />
+			<Collapse line="179" />
+			<Collapse line="198" />
+			<Collapse line="217" />
+			<Collapse line="236" />
+			<Collapse line="255" />
+			<Collapse line="274" />
+			<Collapse line="293" />
+			<Collapse line="312" />
+			<Collapse line="331" />
+		</Folding>
+	</File>
+	<File name="include\dominios.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="10312" topLine="109" />
+		</Cursor>
+		<Folding>
+			<Collapse line="16" />
+			<Collapse line="58" />
+			<Collapse line="99" />
+			<Collapse line="140" />
+			<Collapse line="181" />
+			<Collapse line="222" />
+			<Collapse line="263" />
+			<Collapse line="304" />
+			<Collapse line="346" />
+			<Collapse line="386" />
+			<Collapse line="426" />
+			<Collapse line="468" />
+			<Collapse line="510" />
+			<Collapse line="550" />
+			<Collapse line="591" />
+			<Collapse line="631" />
+			<Collapse line="673" />
+			<Collapse line="715" />
 		</Folding>
 	</File>
 </CodeBlocks_layout_file>
