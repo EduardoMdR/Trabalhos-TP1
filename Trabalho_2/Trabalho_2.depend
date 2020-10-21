@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1603248018 source:c:\users\eduar\documents\github\trabalhos-tp1\trabalho_2\main.cpp
+	<iostream>
+	"dominios.h"
+	"testes.h"
+	"entidades.h"
+
+1601080585 source:c:\users\eduar\documents\github\trabalhos-tp1\trabalho_2\src\dominios.cpp
+	"dominios.h"
+
+1603248001 source:c:\users\eduar\documents\github\trabalhos-tp1\trabalho_2\src\entidades.cpp
+	"entidades.h"
+
+1600968914 source:c:\users\eduar\documents\github\trabalhos-tp1\trabalho_2\src\testes.cpp
+	"testes.h"
+
