@@ -1,0 +1,57 @@
+warning: The selected output language "brazilian" has not been updated
+since release 1.8.19.  As a result some sentences may appear in English.
+
+C:/Users/eduar/Documents/GitHub/Trabalhos-TP1/Trabalho_2/include/dominios.h:30: warning: argument 'valor' of command @param is not found in the argument list of Cep::setCep(int cep)
+C:/Users/eduar/Documents/GitHub/Trabalhos-TP1/Trabalho_2/include/dominios.h:40: warning: The following parameter of Cep::setCep(int cep) is not documented:
+  parameter 'cep'
+C:/Users/eduar/Documents/GitHub/Trabalhos-TP1/Trabalho_2/include/dominios.h:71: warning: argument 'valor' of command @param is not found in the argument list of Classe::setClasse(string classe)
+C:/Users/eduar/Documents/GitHub/Trabalhos-TP1/Trabalho_2/include/dominios.h:81: warning: The following parameter of Classe::setClasse(string classe) is not documented:
+  parameter 'classe'
+C:/Users/eduar/Documents/GitHub/Trabalhos-TP1/Trabalho_2/include/dominios.h:112: warning: argument 'valor' of command @param is not found in the argument list of CodigoAgencia::setCodigoAgencia(int codigoAgencia)
+C:/Users/eduar/Documents/GitHub/Trabalhos-TP1/Trabalho_2/include/dominios.h:122: warning: The following parameter of CodigoAgencia::setCodigoAgencia(int codigoAgencia) is not documented:
+  parameter 'codigoAgencia'
+C:/Users/eduar/Documents/GitHub/Trabalhos-TP1/Trabalho_2/include/dominios.h:153: warning: argument 'valor' of command @param is not found in the argument list of CodigoAplicacao::setCodigoAplicacao(int codigoAplicacao)
+C:/Users/eduar/Documents/GitHub/Trabalhos-TP1/Trabalho_2/include/dominios.h:163: warning: The following parameter of CodigoAplicacao::setCodigoAplicacao(int codigoAplicacao) is not documented:
+  parameter 'codigoAplicacao'
+C:/Users/eduar/Documents/GitHub/Trabalhos-TP1/Trabalho_2/include/dominios.h:194: warning: argument 'valor' of command @param is not found in the argument list of CodigoBanco::setCodigoBanco(int codigoBanco)
+C:/Users/eduar/Documents/GitHub/Trabalhos-TP1/Trabalho_2/include/dominios.h:204: warning: The following parameter of CodigoBanco::setCodigoBanco(int codigoBanco) is not documented:
+  parameter 'codigoBanco'
+C:/Users/eduar/Documents/GitHub/Trabalhos-TP1/Trabalho_2/include/dominios.h:235: warning: argument 'valor' of command @param is not found in the argument list of CodigoProduto::setCodigoProduto(int codigoProduto)
+C:/Users/eduar/Documents/GitHub/Trabalhos-TP1/Trabalho_2/include/dominios.h:245: warning: The following parameter of CodigoProduto::setCodigoProduto(int codigoProduto) is not documented:
+  parameter 'codigoProduto'
+C:/Users/eduar/Documents/GitHub/Trabalhos-TP1/Trabalho_2/include/dominios.h:276: warning: argument 'valor' of command @param is not found in the argument list of Cpf::setCpf(string cpf)
+C:/Users/eduar/Documents/GitHub/Trabalhos-TP1/Trabalho_2/include/dominios.h:286: warning: The following parameter of Cpf::setCpf(string cpf) is not documented:
+  parameter 'cpf'
+C:/Users/eduar/Documents/GitHub/Trabalhos-TP1/Trabalho_2/include/dominios.h:318: warning: argument 'valor' of command @param is not found in the argument list of Data::setData(int data)
+C:/Users/eduar/Documents/GitHub/Trabalhos-TP1/Trabalho_2/include/dominios.h:328: warning: The following parameter of Data::setData(int data) is not documented:
+  parameter 'data'
+C:/Users/eduar/Documents/GitHub/Trabalhos-TP1/Trabalho_2/include/dominios.h:358: warning: argument 'valor' of command @param is not found in the argument list of Emissor::setEmissor(string emissor)
+C:/Users/eduar/Documents/GitHub/Trabalhos-TP1/Trabalho_2/include/dominios.h:368: warning: The following parameter of Emissor::setEmissor(string emissor) is not documented:
+  parameter 'emissor'
+C:/Users/eduar/Documents/GitHub/Trabalhos-TP1/Trabalho_2/include/dominios.h:398: warning: argument 'valor' of command @param is not found in the argument list of Endereco::setEndereco(string endereco)
+C:/Users/eduar/Documents/GitHub/Trabalhos-TP1/Trabalho_2/include/dominios.h:408: warning: The following parameter of Endereco::setEndereco(string endereco) is not documented:
+  parameter 'endereco'
+C:/Users/eduar/Documents/GitHub/Trabalhos-TP1/Trabalho_2/include/dominios.h:440: warning: argument 'valor' of command @param is not found in the argument list of Horario::setHorario(int horario)
+C:/Users/eduar/Documents/GitHub/Trabalhos-TP1/Trabalho_2/include/dominios.h:450: warning: The following parameter of Horario::setHorario(int horario) is not documented:
+  parameter 'horario'
+C:/Users/eduar/Documents/GitHub/Trabalhos-TP1/Trabalho_2/include/dominios.h:480: warning: argument 'valor' of command @param is not found in the argument list of Nome::setNome(string nome)
+C:/Users/eduar/Documents/GitHub/Trabalhos-TP1/Trabalho_2/include/dominios.h:490: warning: The following parameter of Nome::setNome(string nome) is not documented:
+  parameter 'nome'
+C:/Users/eduar/Documents/GitHub/Trabalhos-TP1/Trabalho_2/include/dominios.h:522: warning: argument 'valor' of command @param is not found in the argument list of Numero::setNumero(string numero)
+C:/Users/eduar/Documents/GitHub/Trabalhos-TP1/Trabalho_2/include/dominios.h:532: warning: The following parameter of Numero::setNumero(string numero) is not documented:
+  parameter 'numero'
+C:/Users/eduar/Documents/GitHub/Trabalhos-TP1/Trabalho_2/include/dominios.h:563: warning: argument 'valor' of command @param is not found in the argument list of Prazo::setPrazo(int prazo)
+C:/Users/eduar/Documents/GitHub/Trabalhos-TP1/Trabalho_2/include/dominios.h:573: warning: The following parameter of Prazo::setPrazo(int prazo) is not documented:
+  parameter 'prazo'
+C:/Users/eduar/Documents/GitHub/Trabalhos-TP1/Trabalho_2/include/dominios.h:603: warning: argument 'valor' of command @param is not found in the argument list of Senha::setSenha(string senha)
+C:/Users/eduar/Documents/GitHub/Trabalhos-TP1/Trabalho_2/include/dominios.h:613: warning: The following parameter of Senha::setSenha(string senha) is not documented:
+  parameter 'senha'
+C:/Users/eduar/Documents/GitHub/Trabalhos-TP1/Trabalho_2/include/dominios.h:645: warning: argument 'valor' of command @param is not found in the argument list of Taxa::setTaxa(int taxa)
+C:/Users/eduar/Documents/GitHub/Trabalhos-TP1/Trabalho_2/include/dominios.h:655: warning: The following parameter of Taxa::setTaxa(int taxa) is not documented:
+  parameter 'taxa'
+C:/Users/eduar/Documents/GitHub/Trabalhos-TP1/Trabalho_2/include/dominios.h:687: warning: argument 'valor' of command @param is not found in the argument list of ValorAplicacao::setValorAplicacao(int valorAplicacao)
+C:/Users/eduar/Documents/GitHub/Trabalhos-TP1/Trabalho_2/include/dominios.h:697: warning: The following parameter of ValorAplicacao::setValorAplicacao(int valorAplicacao) is not documented:
+  parameter 'valorAplicacao'
+C:/Users/eduar/Documents/GitHub/Trabalhos-TP1/Trabalho_2/include/dominios.h:728: warning: argument 'valor' of command @param is not found in the argument list of ValorMinimo::setValorMinimo(int valorMinimo)
+C:/Users/eduar/Documents/GitHub/Trabalhos-TP1/Trabalho_2/include/dominios.h:738: warning: The following parameter of ValorMinimo::setValorMinimo(int valorMinimo) is not documented:
+  parameter 'valorMinimo'

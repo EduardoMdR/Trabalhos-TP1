@@ -35,11 +35,22 @@
 		<Unit filename="include/dominios.h" />
 		<Unit filename="include/entidades.h" />
 		<Unit filename="include/testes.h" />
+		<Unit filename="include/testesEntidades.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/dominios.cpp" />
 		<Unit filename="src/entidades.cpp" />
 		<Unit filename="src/testes.cpp" />
+		<Unit filename="src/testesEntidades.cpp" />
 		<Extensions>
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project output_language="Brazilian" />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
 			<lib_finder disable_auto="1" />
 		</Extensions>
 	</Project>
