@@ -33,11 +33,11 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/dominios.h" />
-		<Unit filename="include/entidades.h" />
-		<Unit filename="include/testes.h" />
-		<Unit filename="include/testesEntidades.h">
+		<Unit filename="include/entidades.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
+		<Unit filename="include/testes.h" />
+		<Unit filename="include/testesEntidades.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/dominios.cpp" />
 		<Unit filename="src/entidades.cpp" />

@@ -1,5 +1,6 @@
 #include "testesEntidades.h"
 
+// aplicação
 void TUAplicacao::setUp(){
   entidade = new Aplicacao();
   estado = SUCESSO;
@@ -38,6 +39,49 @@ int TUAplicacao::run(){
   testarCenarioCodigo();
   testarCenarioValor();
   testarCenarioData();
+  tearDown();
+  return estado;
+}
+
+// Conta
+void TUConta::setUp(){
+  entidade = new Conta();
+  estado = SUCESSO;
+}
+
+void TUConta::tearDown(){
+  delete entidade;
+}
+
+void TUConta::testarCenarioBanco(){
+  CodigoBanco valor;
+  valor.setCodigoBanco(VALOR_VALIDO_BANCO);
+  entidade->setBanco(valor);
+  if (entidade->getBanco().getCodigoBanco() != VALOR_VALIDO_BANCO)
+    estado = FALHA;
+}
+
+void TUConta::testarCenarioAgencia(){
+  CodigoAgencia valor;
+  valor.setCodigoAgencia(VALOR_VALIDO_AGENCIA);
+  entidade->setAgencia(valor);
+  if (entidade->getAgencia().getCodigoAgencia() != VALOR_VALIDO_AGENCIA)
+    estado = FALHA;
+}
+
+void TUConta::testarCenarioNumero(){
+  Numero valor;
+  valor.setNumero(VALOR_VALIDO_NUMERO);
+  entidade->setNumero(valor);
+  if (entidade->getNumero().getNumero() != VALOR_VALIDO_NUMERO)
+    estado = FALHA;
+}
+
+int TUConta::run(){
+  setUp();
+  testarCenarioBanco();
+  testarCenarioAgencia();
+  testarCenarioNumero();
   tearDown();
   return estado;
 }

@@ -1,6 +1,3 @@
-#ifndef ENTIDADES_H_INCLUDED
-#define ENTIDADES_H_INCLUDED
-
 #include "dominios.h"
 #include <string>
 
@@ -42,21 +39,52 @@ inline ValorAplicacao Aplicacao::getValor() const{
 }
 
 // data de aplicação
-inline void Aplicacao::setData(const Data &codigo){
+inline void Aplicacao::setData(const Data &data){
     this->data = data;
 }
 inline Data Aplicacao::getData() const{
     return data;
 }
 
-// class Conta {
-//     private:
-//         CodigoBanco     banco;
-//         CodigoAgencia   agencia;
-//         Numero          numero;
-//     public:
+class Conta {
+    private:
+        CodigoBanco     banco;
+        CodigoAgencia   agencia;
+        Numero          numero;
+    public:
+        void setBanco(const CodigoBanco&);
+        CodigoBanco getBanco() const;
 
-// };
+        void setAgencia(const CodigoAgencia&);
+        CodigoAgencia getAgencia() const;
+
+        void setNumero(const Numero&);
+        Numero getNumero() const;
+};
+
+// valor banco
+inline void Conta::setBanco(const CodigoBanco &banco){
+    this->banco = banco;    // está dando algu erro aqui
+}
+inline CodigoBanco Conta::getBanco() const{
+    return banco;
+}
+
+// valor codigo agencia
+inline void Conta::setAgencia(const CodigoAgencia &agencia){
+    this->agencia = agencia;
+}
+inline CodigoAgencia Conta::getAgencia() const{
+    return agencia;
+}
+
+// valor número
+inline void Conta::setNumero(const Numero &numero){
+    this->numero = numero;
+}
+inline Numero Conta::getNumero() const{
+    return numero;
+}
 
 // class Produto {
 //     private:
@@ -71,5 +99,3 @@ inline Data Aplicacao::getData() const{
 //     public:
 
 // };
-
-#endif // ENTIDADES_H_INCLUDED

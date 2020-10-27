@@ -17,6 +17,14 @@ int main()
             break;
     }
 
+    TUConta testeB;
+    switch(testeB.run()){
+        case TUConta::SUCESSO : cout << "Sucesso para entidade Conta" << endl;
+            break;
+        case TUConta::FALHA : cout << "Falha para entidade Conta" << endl;
+            break;
+    }
+
     system("pause");
     return 0;
 }
