@@ -9,6 +9,8 @@ using namespace std;
 class TUAplicacao {
   private:
     const static int VALOR_VALIDO_CODIGO = 12345;
+    const static int VALOR_VALIDO_VALOR  = 1000000;
+    const static int VALOR_VALIDO_DATA   = 20102020;
     Aplicacao *entidade;
     int estado;
 
