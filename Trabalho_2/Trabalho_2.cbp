@@ -45,7 +45,7 @@
 		<Unit filename="src/testesEntidades.cpp" />
 		<Extensions>
 			<DoxyBlocks>
-				<comment_style block="2" line="0" />
+				<comment_style block="0" line="0" />
 				<doxyfile_project output_language="Brazilian" />
 				<doxyfile_build />
 				<doxyfile_warnings />
