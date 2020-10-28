@@ -3,6 +3,8 @@
 
 using namespace std;
 
+
+
 class Aplicacao {
     private:
         // Dominio      // Nome atributo
@@ -46,6 +48,8 @@ inline Data Aplicacao::getData() const{
     return data;
 }
 
+
+
 class Conta {
     private:
         CodigoBanco     banco;
@@ -86,12 +90,105 @@ inline Numero Conta::getNumero() const{
     return numero;
 }
 
-// class Produto {
-//     private:
+class Produto {
+    private:
+        CodigoProduto   codigo;
+        Classe          classe;
+        Emissor         emissor;
+        Prazo           prazo;
+        Data            vencimento;
+        Taxa            taxa;
+        Horario         horario;
+        ValorMinimo     valor;
+    public:
+        void setCodigo(const CodigoProduto&);
+        CodigoProduto getCodigo() const;
 
-//     public:
+        void setClasse(const Classe&);
+        Classe getClasse() const;
 
-// };
+        void setEmissor(const Emissor&);
+        Emissor getEmissor() const;
+
+        void setPrazo(const Prazo&);
+        Prazo getPrazo() const;
+
+        void setVencimento(const Data&);
+        Data getVencimento() const;
+
+        void setTaxa(const Taxa&);
+        Taxa getTaxa() const;
+
+        void setHorario(const Horario&);
+        Horario getHorario() const;
+
+        void setValor(const ValorMinimo&);
+        ValorMinimo getValor() const;
+};
+
+// valor codigo
+inline void Produto::setCodigo(const CodigoProduto &codigo){
+    this->codigo = codigo;
+}
+inline CodigoProduto Produto::getCodigo() const{
+    return codigo;
+}
+
+// valor classe
+inline void Produto::setClasse(const Classe &classe){
+    this->classe = classe;
+}
+inline Classe Produto::getClasse() const{
+    return classe;
+}
+
+// valor emissor
+inline void Produto::setEmissor(const Emissor &emissor){
+    this->emissor = emissor;
+}
+inline Emissor Produto::getEmissor() const{
+    return emissor;
+}
+
+// valor prazo
+inline void Produto::setPrazo(const Prazo &prazo){
+    this->prazo = prazo;    // está dando algu erro aqui
+}
+inline Prazo Produto::getPrazo() const{
+    return prazo;
+}
+
+// valor vencimento
+inline void Produto::setVencimento(const Data &vencimento){
+    this->vencimento = vencimento;
+}
+inline Data Produto::getVencimento() const{
+    return vencimento;
+}
+
+// valor taxa
+inline void Produto::setTaxa(const Taxa &taxa){
+    this->taxa = taxa;
+}
+inline Taxa Produto::getTaxa() const{
+    return taxa;
+}
+
+// valor horario
+inline void Produto::setHorario(const Horario &horario){
+    this->horario = horario;
+}
+inline Horario Produto::getHorario() const{
+    return horario;
+}
+
+// valor valor minimo
+inline void Produto::setValor(const ValorMinimo &valor){
+    this->valor = valor;    // está dando algu erro aqui
+}
+inline ValorMinimo Produto::getValor() const{
+    return valor;
+}
 
 // class Usuario {
 //     private:

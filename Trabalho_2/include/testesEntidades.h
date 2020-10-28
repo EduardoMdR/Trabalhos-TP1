@@ -44,4 +44,35 @@ class TUConta {
     int run();
 };
 
+class TUProduto {
+  private:
+    const static int VALOR_VALIDO_CODIGO     = 123;
+    const string VALOR_VALIDO_CLASSE         = "CDB";
+    const string VALOR_VALIDO_EMISSOR        = "Aaaaa";
+    const static int VALOR_VALIDO_PRAZO      = 6;
+    const static int VALOR_VALIDO_VENCIMENTO = 20102020;
+    const static int VALOR_VALIDO_TAXA       = 100;
+    const static int VALOR_VALIDO_HORARIO    = 1350;
+    const static int VALOR_VALIDO_VALOR      = 1000;
+
+    Produto *entidade;
+    int estado;
+
+    void setUp();  // crear objeto para teste
+    void tearDown();  // destruir objeto
+    void testarCenarioCodigo();
+    void testarCenarioClasse();
+    void testarCenarioEmissor();
+    void testarCenarioPrazo();
+    void testarCenarioVencimento();
+    void testarCenarioTaxa();
+    void testarCenarioHorario();
+    void testarCenarioValor();
+
+  public:
+    const static int SUCESSO =  0;
+    const static int FALHA   = -1;
+    int run();
+};
+
 #endif // TESTESENTIDADES_H_INCLUDED

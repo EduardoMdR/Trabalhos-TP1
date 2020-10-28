@@ -11,9 +11,9 @@ void TUAplicacao::tearDown(){
 }
 
 void TUAplicacao::testarCenarioCodigo(){
-  CodigoAplicacao codigo;
-  codigo.setCodigoAplicacao(VALOR_VALIDO_CODIGO);
-  entidade->setCodigo(codigo);
+  CodigoAplicacao valor;
+  valor.setCodigoAplicacao(VALOR_VALIDO_CODIGO);
+  entidade->setCodigo(valor);
   if (entidade->getCodigo().getCodigoAplicacao() != VALOR_VALIDO_CODIGO)
     estado = FALHA;
 }
@@ -27,9 +27,9 @@ void TUAplicacao::testarCenarioValor(){
 }
 
 void TUAplicacao::testarCenarioCodigo(){
-  Data data;
-  data.setData(VALOR_VALIDO_DATA);
-  entidade->setData(data);
+  Data valor;
+  valor.setData(VALOR_VALIDO_DATA);
+  entidade->setData(valor);
   if (entidade->getData().getData() != VALOR_VALIDO_DATA)
     estado = FALHA;
 }
@@ -82,6 +82,94 @@ int TUConta::run(){
   testarCenarioBanco();
   testarCenarioAgencia();
   testarCenarioNumero();
+  tearDown();
+  return estado;
+}
+
+// Produto
+void TUProduto::setUp(){
+  entidade = new Produto();
+  estado = SUCESSO;
+}
+
+void TUProduto::tearDown(){
+  delete entidade;
+}
+
+void TUProduto::testarCenarioCodigo(){
+  CodigoProduto valor;
+  valor.setCodigoProduto(VALOR_VALIDO_CODIGO);
+  entidade->setCodigo(valor);
+  if (entidade->getCodigo().getCodigoProduto() != VALOR_VALIDO_CODIGO)
+    estado = FALHA;
+}
+
+void TUProduto::testarCenarioClasse(){
+  Classe valor;
+  valor.setClasse(VALOR_VALIDO_CLASSE);
+  entidade->setClasse(valor);
+  if (entidade->getClasse().getClasse() != VALOR_VALIDO_CLASSE)
+    estado = FALHA;
+}
+
+void TUProduto::testarCenarioEmissor(){
+  Emissor valor;
+  valor.setEmissor(VALOR_VALIDO_EMISSOR);
+  entidade->setEmissor(valor);
+  if (entidade->getEmissor().getEmissor() != VALOR_VALIDO_EMISSOR)
+    estado = FALHA;
+}
+
+void TUProduto::testarCenarioPrazo(){
+  Prazo valor;
+  valor.setPrazo(VALOR_VALIDO_PRAZO);
+  entidade->setPrazo(valor);
+  if (entidade->getPrazo().getPrazo() != VALOR_VALIDO_PRAZO)
+    estado = FALHA;
+}
+
+void TUProduto::testarCenarioVencimento(){
+  Data valor;
+  valor.setData(VALOR_VALIDO_VENCIMENTO);
+  entidade->setVencimento(valor);
+  if (entidade->getVencimento().getData() != VALOR_VALIDO_VENCIMENTO)
+    estado = FALHA;
+}
+
+void TUProduto::testarCenarioTaxa(){
+  Taxa valor;
+  valor.setTaxa(VALOR_VALIDO_TAXA);
+  entidade->setTaxa(valor);
+  if (entidade->getTaxa().getTaxa() != VALOR_VALIDO_TAXA)
+    estado = FALHA;
+}
+
+void TUProduto::testarCenarioHorario(){
+  Horario valor;
+  valor.setHorario(VALOR_VALIDO_HORARIO);
+  entidade->setHorario(valor);
+  if (entidade->getHorario().getHorario() != VALOR_VALIDO_HORARIO)
+    estado = FALHA;
+}
+
+void TUProduto::testarCenarioValor(){
+  ValorMinimo valor;
+  valor.setValorMinimo(VALOR_VALIDO_VALOR);
+  entidade->setValor(valor);
+  if (entidade->getValor().getValorMinimo() != VALOR_VALIDO_VALOR)
+    estado = FALHA;
+}
+
+int TUProduto::run(){
+  setUp();
+  testarCenarioCodigo();
+  testarCenarioClasse();
+  testarCenarioEmissor();
+  testarCenarioPrazo();
+  testarCenarioVencimento();
+  testarCenarioTaxa();
+  testarCenarioHorario();
+  testarCenarioValor();
   tearDown();
   return estado;
 }
