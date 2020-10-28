@@ -43,6 +43,7 @@ int TUAplicacao::run(){
   return estado;
 }
 
+
 // Conta
 void TUConta::setUp(){
   entidade = new Conta();
@@ -85,6 +86,7 @@ int TUConta::run(){
   tearDown();
   return estado;
 }
+
 
 // Produto
 void TUProduto::setUp(){
@@ -170,6 +172,68 @@ int TUProduto::run(){
   testarCenarioTaxa();
   testarCenarioHorario();
   testarCenarioValor();
+  tearDown();
+  return estado;
+}
+
+
+// usuario
+void TUUsuario::setUp(){
+  entidade = new Usuario();
+  estado = SUCESSO;
+}
+
+void TUUsuario::tearDown(){
+  delete entidade;
+}
+
+void TUUsuario::testarCenarioNome(){
+  Nome valor;
+  valor.setNome(VALOR_VALIDO_NOME);
+  entidade->setNome(valor);
+  if (entidade->getNome().getNome() != VALOR_VALIDO_NOME)
+    estado = FALHA;
+}
+
+void TUUsuario::testarCenarioEndereco(){
+  Endereco valor;
+  valor.setEndereco(VALOR_VALIDO_ENDERECO);
+  entidade->setEndereco(valor);
+  if (entidade->getEndereco().getEndereco() != VALOR_VALIDO_ENDERECO)
+    estado = FALHA;
+}
+
+void TUUsuario::testarCenarioCep(){
+  Cep valor;
+  valor.setCep(VALOR_VALIDO_CEP);
+  entidade->setCep(valor);
+  if (entidade->getCep().getCep() != VALOR_VALIDO_CEP)
+    estado = FALHA;
+}
+
+void TUUsuario::testarCenarioCpf(){
+  Cpf valor;
+  valor.setCpf(VALOR_VALIDO_CPF);
+  entidade->setCpf(valor);
+  if (entidade->getCpf().getCpf() != VALOR_VALIDO_CPF)
+    estado = FALHA;
+}
+
+void TUUsuario::testarCenarioSenha(){
+  Senha valor;
+  valor.setSenha(VALOR_VALIDO_SENHA);
+  entidade->setSenha(valor);
+  if (entidade->getSenha().getSenha() != VALOR_VALIDO_SENHA)
+    estado = FALHA;
+}
+
+int TUUsuario::run(){
+  setUp();
+  testarCenarioNome();
+  testarCenarioEndereco();
+  testarCenarioCep();
+  testarCenarioCpf();
+  testarCenarioSenha();
   tearDown();
   return estado;
 }

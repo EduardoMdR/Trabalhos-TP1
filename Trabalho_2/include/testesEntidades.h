@@ -75,4 +75,29 @@ class TUProduto {
     int run();
 };
 
+class TUUsuario {
+  private:
+    const string VALOR_VALIDO_NOME     = "Eduardo";
+    const string VALOR_VALIDO_ENDERECO = "AAaaa";
+    const static int VALOR_VALIDO_CEP  = 37795000;
+    const string VALOR_VALIDO_CPF      = "14655871601";
+    const string VALOR_VALIDO_SENHA    = "123456";
+    
+    Usuario *entidade;
+    int estado;
+
+    void setUp();
+    void tearDown();
+    void testarCenarioNome();
+    void testarCenarioEndereco();
+    void testarCenarioCep();
+    void testarCenarioCpf();
+    void testarCenarioSenha();
+
+  public:
+    const static int SUCESSO =  0;
+    const static int FALHA   = -1;
+    int run();
+};
+
 #endif // TESTESENTIDADES_H_INCLUDED

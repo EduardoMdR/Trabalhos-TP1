@@ -190,9 +190,70 @@ inline ValorMinimo Produto::getValor() const{
     return valor;
 }
 
-// class Usuario {
-//     private:
 
-//     public:
 
-// };
+class Usuario {
+    private:
+        Nome            nome;
+        Endereco        endereco;
+        Cep             cep;
+        Cpf             cpf;
+        Senha           senha;
+    public:
+        void setNome(const Nome&);
+        Nome getNome() const;
+
+        void setEndereco(const Endereco&);
+        Endereco getEndereco() const;
+
+        void setCep(const Cep&);
+        Cep getCep() const;
+
+        void setCpf(const Cpf&);
+        Cpf getCpf() const;
+
+        void setSenha(const Senha&);
+        Senha getSenha() const;
+};
+
+// valor nome
+inline void Usuario::setNome(const Nome &nome){
+    this->nome = nome;
+}
+inline Nome Usuario::getNome() const{
+    return nome;
+}
+
+// valor endereco
+inline void Usuario::setEndereco(const Endereco &endereco){
+    this->endereco = endereco;
+}
+inline Endereco Usuario::getEndereco() const{
+    return endereco;
+}
+
+// valor cep
+inline void Usuario::setCep(const Cep &cep){
+    this->cep = cep;
+}
+inline Cep Usuario::getCep() const{
+    return cep;
+}
+
+// valor cpf
+inline void Usuario::setCpf(const Cpf &cpf){
+    this->cpf = cpf;
+}
+inline Cpf Usuario::getCpf() const{
+    return cpf;
+}
+
+// valor senha
+inline void Usuario::setSenha(const Senha &senha){
+    this->senha = senha;
+}
+inline Senha Usuario::getSenha() const{
+    return senha;
+}
+
+

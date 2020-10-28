@@ -33,6 +33,14 @@ int main()
             break;
     }
 
+    TUUsuario testeUsuario;
+    switch(testeUsuario.run()){
+        case TUConta::SUCESSO : cout << "Sucesso para entidade Usuario" << endl;
+            break;
+        case TUConta::FALHA : cout << "Falha para entidade Usuario" << endl;
+            break;
+    }
+
     system("pause");
     return 0;
 }
