@@ -26,7 +26,7 @@ void TUAplicacao::testarCenarioValor(){
     estado = FALHA;
 }
 
-void TUAplicacao::testarCenarioCodigo(){
+void TUAplicacao::testarCenarioData(){
   Data valor;
   valor.setData(VALOR_VALIDO_DATA);
   entidade->setData(valor);

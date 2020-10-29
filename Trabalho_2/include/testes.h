@@ -84,7 +84,7 @@ class TUCodigoAplicacao{
 
 class TUCodigoBanco{
     private:
-        const static int VALOR_VALIDO   = 341;
+        const static int VALOR_VALIDO   = 001;
         const static int VALOR_INVALIDO = 000;
         CodigoBanco *codigoBanco;
         int estado;

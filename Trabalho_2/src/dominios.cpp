@@ -47,11 +47,7 @@ void CodigoAplicacao::setCodigoAplicacao(int codigoAplicacao){
 
 // CodigoBanco
 void CodigoBanco::validar(int codigoBanco){
-    if (codigoBanco == LIMITE[0] ||
-        codigoBanco == LIMITE[1] ||
-        codigoBanco == LIMITE[2] ||
-        codigoBanco == LIMITE[3] ||
-        codigoBanco == LIMITE[4]){
+    if (codigoBanco == LIMITE){
     }else{
         throw invalid_argument("Argumento invalido.");
     }
@@ -171,12 +167,7 @@ void Numero::setNumero(string numero){
 
 // Prazo
 void Prazo::validar(int prazo){
-    if (prazo == LIMITE[0] || prazo == LIMITE[1] ||
-        prazo == LIMITE[2] || prazo == LIMITE[3] ||
-        prazo == LIMITE[4] || prazo == LIMITE[5] ||
-        prazo == LIMITE[6] || prazo == LIMITE[7] ||
-        prazo == LIMITE[8] || prazo == LIMITE[9] ||
-        prazo == LIMITE[10] || prazo == LIMITE[11]){
+    if (prazo == LIMITE){
     }else
         throw invalid_argument("Argumento invalido.");
 }
@@ -229,8 +220,7 @@ void ValorAplicacao::setValorAplicacao(int valorAplicacao){
 
 // ValorMinimo
 void ValorMinimo::validar(int valorMinimo){
-    if (valorMinimo == LIMITE[0] || valorMinimo == LIMITE[1] ||
-        valorMinimo == LIMITE[2] || valorMinimo == LIMITE[3]){
+    if (valorMinimo == LIMITE){
     }else{
         throw invalid_argument("Argumento invalido.");
     }

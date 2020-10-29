@@ -182,7 +182,7 @@ class CodigoAplicacao{
 class CodigoBanco{
     private:
         int codigoBanco;
-        const int LIMITE[5] =  {001, 033, 104, 237, 341};
+        const static int LIMITE = 001;
 
 ///
 /// V&aacute;lida o objeto caso esteja dentro do valores estabelecidos .
@@ -551,7 +551,7 @@ class Numero{
 class Prazo{
     private:
         int prazo;
-        const int LIMITE[12] = {6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 66, 72};
+        const static int LIMITE = 6;
 
 ///
 /// V&aacute;lida o objeto caso esteja dentro do valores estabelecidos .
@@ -716,7 +716,7 @@ class ValorAplicacao{
 class ValorMinimo{
     private:
         int valorMinimo;
-        const int LIMITE[4] =  {1000, 5000, 10000, 5000};   // 1000 = R$ 1.000,00
+        const static int LIMITE = 1000;   // 1000 = R$ 1.000,00
 
 ///
 /// V&aacute;lida o objeto caso esteja dentro do valores estabelecidos .
