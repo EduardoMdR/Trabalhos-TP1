@@ -1,10 +1,13 @@
+#ifndef ENTIDADES_H
+#define ENTIDADES_H
+
 #include "dominios.h"
 #include <string>
 
 using namespace std;
 
 /**
- * @brief Entidade para Aplicação
+ * @brief Entidade para Aplica��o
  *
  */
 class Aplicacao {
@@ -14,16 +17,16 @@ class Aplicacao {
         ValorAplicacao  valor;
         Data            data;
     public:
-        // declaração dos métodos setters e getters
+        // declara��o dos m�todos setters e getters
 
 /**
- * @brief Set para o atributo código
+ * @brief Set para o atributo c�digo
  *
  */
         void setCodigo(const CodigoAplicacao&);
 
 /**
- * @brief Get para Código
+ * @brief Get para C�digo
  *
  * @return CodigoAplicacao
  */
@@ -166,16 +169,16 @@ class Conta {
 };
 
 /**
- * @brief método inline para setBanco
+ * @brief m�todo inline para setBanco
  *
  * @param banco
  */
 inline void Conta::setBanco(const CodigoBanco &banco){
-    this->banco = banco;    // está dando algu erro aqui
+    this->banco = banco;    // est� dando algu erro aqui
 }
 
 /**
- * @brief método inline para getBanco
+ * @brief m�todo inline para getBanco
  *
  * @return CodigoBanco
  */
@@ -184,7 +187,7 @@ inline CodigoBanco Conta::getBanco() const{
 }
 
 /**
- * @brief método inline para setAgencia
+ * @brief m�todo inline para setAgencia
  *
  * @param agencia
  */
@@ -193,7 +196,7 @@ inline void Conta::setAgencia(const CodigoAgencia &agencia){
 }
 
 /**
- * @brief método inline para getAgencia
+ * @brief m�todo inline para getAgencia
  *
  * @return CodigoAgencia
  */
@@ -202,7 +205,7 @@ inline CodigoAgencia Conta::getAgencia() const{
 }
 
 /**
- * @brief método inline para setNumero
+ * @brief m�todo inline para setNumero
  *
  * @param numero
  */
@@ -211,7 +214,7 @@ inline void Conta::setNumero(const Numero &numero){
 }
 
 /**
- * @brief método inline para getNumero
+ * @brief m�todo inline para getNumero
  *
  * @return Numero
  */
@@ -342,7 +345,7 @@ class Produto {
 };
 
 /**
- * @brief método inline para setCodigo
+ * @brief m�todo inline para setCodigo
  *
  * @param codigo
  */
@@ -351,7 +354,7 @@ inline void Produto::setCodigo(const CodigoProduto &codigo){
 }
 
 /**
- * @brief método inline para getCodigo
+ * @brief m�todo inline para getCodigo
  *
  * @return CodigoProduto
  */
@@ -360,7 +363,7 @@ inline CodigoProduto Produto::getCodigo() const{
 }
 
 /**
- * @brief método inline para setClasse
+ * @brief m�todo inline para setClasse
  *
  * @param classe
  */
@@ -369,7 +372,7 @@ inline void Produto::setClasse(const Classe &classe){
 }
 
 /**
- * @brief método inline para getClasse
+ * @brief m�todo inline para getClasse
  *
  * @return Classe
  */
@@ -378,7 +381,7 @@ inline Classe Produto::getClasse() const{
 }
 
 /**
- * @brief método inline para setEmissor
+ * @brief m�todo inline para setEmissor
  *
  * @param emissor
  */
@@ -387,7 +390,7 @@ inline void Produto::setEmissor(const Emissor &emissor){
 }
 
 /**
- * @brief método inline para getEmissor
+ * @brief m�todo inline para getEmissor
  *
  * @return Emissor
  */
@@ -396,16 +399,16 @@ inline Emissor Produto::getEmissor() const{
 }
 
 /**
- * @brief método inline para setPrazo
+ * @brief m�todo inline para setPrazo
  *
  * @param prazo
  */
 inline void Produto::setPrazo(const Prazo &prazo){
-    this->prazo = prazo;    // está dando algu erro aqui
+    this->prazo = prazo;    // est� dando algu erro aqui
 }
 
 /**
- * @brief método inline para getPrazo
+ * @brief m�todo inline para getPrazo
  *
  * @return Prazo
  */
@@ -414,7 +417,7 @@ inline Prazo Produto::getPrazo() const{
 }
 
 /**
- * @brief método inline para setVencimento
+ * @brief m�todo inline para setVencimento
  *
  * @param vencimento
  */
@@ -423,7 +426,7 @@ inline void Produto::setVencimento(const Data &vencimento){
 }
 
 /**
- * @brief método inline para getVencimento
+ * @brief m�todo inline para getVencimento
  *
  * @return Data
  */
@@ -432,7 +435,7 @@ inline Data Produto::getVencimento() const{
 }
 
 /**
- * @brief método inline para setTaxa
+ * @brief m�todo inline para setTaxa
  *
  * @param taxa
  */
@@ -441,7 +444,7 @@ inline void Produto::setTaxa(const Taxa &taxa){
 }
 
 /**
- * @brief método inline para getTaxa
+ * @brief m�todo inline para getTaxa
  *
  * @return Taxa
  */
@@ -450,7 +453,7 @@ inline Taxa Produto::getTaxa() const{
 }
 
 /**
- * @brief método inline para setHorario
+ * @brief m�todo inline para setHorario
  *
  * @param horario
  */
@@ -459,7 +462,7 @@ inline void Produto::setHorario(const Horario &horario){
 }
 
 /**
- * @brief método inline para getHorario
+ * @brief m�todo inline para getHorario
  *
  * @return Horario
  */
@@ -468,16 +471,16 @@ inline Horario Produto::getHorario() const{
 }
 
 /**
- * @brief método inline para setValor
+ * @brief m�todo inline para setValor
  *
  * @param valor
  */
 inline void Produto::setValor(const ValorMinimo &valor){
-    this->valor = valor;    // está dando algu erro aqui
+    this->valor = valor;    // est� dando algu erro aqui
 }
 
 /**
- * @brief método inline para getValor
+ * @brief m�todo inline para getValor
  *
  * @return ValorMinimo
  */
@@ -566,7 +569,7 @@ class Usuario {
 };
 
 /**
- * @brief método inline para setNome
+ * @brief m�todo inline para setNome
  *
  * @param nome
  */
@@ -575,7 +578,7 @@ inline void Usuario::setNome(const Nome &nome){
 }
 
 /**
- * @brief método inline para getNome
+ * @brief m�todo inline para getNome
  *
  * @return Nome
  */
@@ -584,7 +587,7 @@ inline Nome Usuario::getNome() const{
 }
 
 /**
- * @brief método inline para setEndereco
+ * @brief m�todo inline para setEndereco
  *
  * @param endereco
  */
@@ -593,7 +596,7 @@ inline void Usuario::setEndereco(const Endereco &endereco){
 }
 
 /**
- * @brief método inline para getEndereco
+ * @brief m�todo inline para getEndereco
  *
  * @return Endereco
  */
@@ -602,7 +605,7 @@ inline Endereco Usuario::getEndereco() const{
 }
 
 /**
- * @brief método inline para setCep
+ * @brief m�todo inline para setCep
  *
  * @param cep
  */
@@ -611,7 +614,7 @@ inline void Usuario::setCep(const Cep &cep){
 }
 
 /**
- * @brief método inline para getCep
+ * @brief m�todo inline para getCep
  *
  * @return Cep
  */
@@ -620,7 +623,7 @@ inline Cep Usuario::getCep() const{
 }
 
 /**
- * @brief método inline para setCpf
+ * @brief m�todo inline para setCpf
  *
  * @param cpf
  */
@@ -629,7 +632,7 @@ inline void Usuario::setCpf(const Cpf &cpf){
 }
 
 /**
- * @brief método inline para getCpf
+ * @brief m�todo inline para getCpf
  *
  * @return Cpf
  */
@@ -638,7 +641,7 @@ inline Cpf Usuario::getCpf() const{
 }
 
 /**
- * @brief método inline para setSenha
+ * @brief m�todo inline para setSenha
  *
  * @param senha
  */
@@ -647,7 +650,7 @@ inline void Usuario::setSenha(const Senha &senha){
 }
 
 /**
- * @brief método inline para getSenha
+ * @brief m�todo inline para getSenha
  *
  * @return Senha
  */
@@ -656,3 +659,6 @@ inline Senha Usuario::getSenha() const{
 }
 
 
+
+
+#endif // ENTIDADES_H

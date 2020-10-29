@@ -82,7 +82,7 @@ class TUUsuario {
     const static int VALOR_VALIDO_CEP  = 37795000;
     const string VALOR_VALIDO_CPF      = "14655871601";
     const string VALOR_VALIDO_SENHA    = "123456";
-    
+
     Usuario *entidade;
     int estado;
 

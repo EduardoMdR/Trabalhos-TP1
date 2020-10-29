@@ -1,6 +1,6 @@
 #include "testesEntidades.h"
 
-// aplicaÃ§Ã£o
+// aplicação
 void TUAplicacao::setUp(){
   entidade = new Aplicacao();
   estado = SUCESSO;

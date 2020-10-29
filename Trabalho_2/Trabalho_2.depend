@@ -1,16 +1,20 @@
 # depslib dependency file v1.0
-1603248018 source:c:\users\eduar\documents\github\trabalhos-tp1\trabalho_2\main.cpp
+1603929649 source:c:\users\eduar\documents\github\trabalhos-tp1\trabalho_2\main.cpp
 	<iostream>
 	"dominios.h"
-	"testes.h"
-	"entidades.h"
 
-1601080585 source:c:\users\eduar\documents\github\trabalhos-tp1\trabalho_2\src\dominios.cpp
+1603929677 source:c:\users\eduar\documents\github\trabalhos-tp1\trabalho_2\src\dominios.cpp
 	"dominios.h"
 
 1603834609 source:c:\users\eduar\documents\github\trabalhos-tp1\trabalho_2\src\entidades.cpp
 	"entidades.h"
 
-1600968914 source:c:\users\eduar\documents\github\trabalhos-tp1\trabalho_2\src\testes.cpp
+1603929829 source:c:\users\eduar\documents\github\trabalhos-tp1\trabalho_2\src\testes.cpp
 	"testes.h"
+
+1603929656 c:\users\eduar\documents\github\trabalhos-tp1\trabalho_2\include\dominios.h
+	<stdexcept>
+
+1603929896 c:\users\eduar\documents\github\trabalhos-tp1\trabalho_2\include\testes.h
+	"dominios.h"
 

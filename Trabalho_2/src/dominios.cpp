@@ -16,7 +16,7 @@ void Classe::validar(string classe){
     if (classe == LIMITE[0] || classe == LIMITE[1] ||
         classe == LIMITE[2] || classe == LIMITE[3] ||
         classe == LIMITE[4]){
-    }else{  // caso a palavra recebida seja diferente das obrigatorias, é lançada exceção
+    }else{  // caso a palavra recebida seja diferente das obrigatorias, ï¿½ lanï¿½ada exceï¿½ï¿½o
         throw invalid_argument("Argumento invalido.");
     }
 }
@@ -101,8 +101,8 @@ void Data::setData(int data){
 void Emissor::validar(string emissor){
     char maiuscula;
     char letrainicial = emissor.at(0);  // recebe o primeiro caracter
-    maiuscula = toupper(emissor[0]);    // recebi o primeiro caracter em maiusculo (se não tiver)
-                                        // compara para ver se o primeiro caracter é maiusculo
+    maiuscula = toupper(emissor[0]);    // recebi o primeiro caracter em maiusculo (se nï¿½o tiver)
+                                        // compara para ver se o primeiro caracter ï¿½ maiusculo
     if (letrainicial != maiuscula || emissor.length() < 5 || emissor.length() > 30)
         throw invalid_argument("Argumento invalido.");
 }
@@ -153,12 +153,12 @@ void Numero::validar(string numero){
     int multiplicador = 5;
     int numeroverificador = 0;                                          // armazena digito verificador recebido
     string valor;
-    for(int i = 0; i < 4; i++){                                         // 4 é a quantidade de dígitos sem contar o verificador
+    for(int i = 0; i < 4; i++){                                         // 4 ï¿½ a quantidade de dï¿½gitos sem contar o verificador
         valor = numero.at(i);
-        valorverificador += (stoi(valor) * (multiplicador - i ));       // o primeiro digito é multiplicado por 5, o segundo por 4 ...
+        valorverificador += (stoi(valor) * (multiplicador - i ));       // o primeiro digito ï¿½ multiplicado por 5, o segundo por 4 ...
     }
-    valorverificador = (valorverificador % 11);                         // O valor obtido é dividio por 11
-    valorverificador = (11 - valorverificador);                         // é tirado de 11 o resto da divisão anterior, e encontrado o digito verificador verdadeiro
+    valorverificador = (valorverificador % 11);                         // O valor obtido ï¿½ dividio por 11
+    valorverificador = (11 - valorverificador);                         // ï¿½ tirado de 11 o resto da divisï¿½o anterior, e encontrado o digito verificador verdadeiro
     valor = numero.at(5);
     numeroverificador = stoi(valor);
     if (numeroverificador != valorverificador)

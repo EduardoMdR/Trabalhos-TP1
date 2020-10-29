@@ -264,7 +264,7 @@ class CodigoProduto{
 class Cpf{
     private:
         string cpf;
-        const static int LIMITE = 44;   // cpf com valor da soma dos numeros igual 44 é o mais comum.
+        const static int LIMITE = 44;   // cpf com valor da soma dos numeros igual 44 Ã¡ o mais comum.
 
 ///
 /// V&aacute;lida o objeto caso respeite a soma dos numeros .
@@ -545,7 +545,7 @@ class Numero{
 ///
 /// Regras de formato:
 ///
-/// - C&oacute;digo &eacute; v&aacute;lido caso seja um valor v&aacute;lido estabelecido: 6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 66 ou 72 (mêses).  .
+/// - C&oacute;digo &eacute; v&aacute;lido caso seja um valor v&aacute;lido estabelecido: 6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 66 ou 72 (mÃªses).  .
 ///
 
 class Prazo{
